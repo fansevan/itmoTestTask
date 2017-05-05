@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Itmo Start Page</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-8 ">
+						<a href="#" id="region-link">Санкт-Петербург <i class="fa fa-angle-down"></i></a>
+					</div>
+				 	<div class="col-xs-4 for-personal-div">
+				 		<a href="#" id="search"><i class="fa fa-neuter"></i></a>
+						<a href="#" class="personal-link hidden-xs">Личный кабинет</a>
+						<a href="#" class="personal-link visible-xs-inline-block"><i class="fa fa-user"></i></a>
+				 	</div>	
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 div-logo">
+					<a href="#"><img src="img/logo.png" alt="ItmoStart"></a>
+				</div>
+			 	<div class="col-md-7 navbar">
+					<ul class="nav navbar-nav">
+			 			<li><a href="#">Об университете</a></li>
+			 			<li><a href="#">Школьникам</a></li>
+			 			<li><a href="#">Родителям</a></li>
+			 			<li><a href="#">Учителям</a></li>
+			 		</ul>
+			 	</div>	
+			</div>
+			<ol class="breadcrumb">
+			  <li><a href="#"><i class="fa fa-home"></i> Главная</a></li>
+			  <li class="active">Список активностей</li>
+			</ol>
+		</div>
+		<div class="itmo-code">
+			<div class="stars">
+				<i class="fa fa-asterisk"></i>
+				<i class="fa fa-asterisk"></i>
+				<i class="fa fa-asterisk"></i>
+				<i class="fa fa-asterisk"></i>
+				<i class="fa fa-asterisk"></i>
+				<i class="fa fa-asterisk"></i>
+			</div>
+			<div class="text">
+				Есть<br>итмо.код?
+			</div>
+		</div>
+	</header>
+	<hr>
+	<div class="container">
+		<div class="row">
+		  	<aside class="col-sm-12 col-md-3 col-lg-3">
+				<h3 class="main-title main-title-filter">Фильтр</h3>
+				<form id="filter-form">
+				<div class="row">
+					<div class="col-sm-6 col-md-12">
+						<select name="period" class="selectpicker">
+						  <option value="0">Период проведения</option>
+						  <option value="1">1</option>
+						  <option value="2">2</option>
+						</select>
+
+						<select name="trajectory" class="selectpicker">
+						  <option value="0">Траектория</option>
+						  <option value="1">1</option>
+						  <option value="2">2</option>
+						</select>
+
+						<select name="class" class="selectpicker active">
+						  <option value="0">Класс</option>
+						  <option value="1" selected>6 класс</option>
+						  <option value="2">2</option>
+						</select>
+
+						<select name="subject" class="selectpicker">
+						  <option value="0">Предмет</option>
+						  <option value="1">1</option>
+						  <option value="2">2</option>
+						</select>	
+					</div>
+					<div class="col-sm-6 col-md-12">
+						<select name="initiative" class="selectpicker">
+						  <option value="0">Инициатива</option>
+						  <option value="1">1</option>
+						  <option value="2">2</option>
+						</select>
+
+						<select name="activityType" class="selectpicker">
+						  <option value="0">Тип активности</option>
+						  <option value="1">1</option>
+						  <option value="2">2</option>
+						</select>
+
+						<select name="unit" class="selectpicker">
+						  <option value="0">Подразделение</option>
+						  <option value="1">1</option>
+						  <option value="2">2</option>
+						</select>
+
+						<select name="region" class="selectpicker">
+						  <option value="0">Регион</option>
+						  <option value="1">1</option>
+						  <option value="2">2</option>
+						</select>
+					</div>
+				</div>
+				<div class="checkbox">
+	                <input id="checkboxPoints" name="points" class="styled" type="checkbox" value="true" checked>
+	                <label for="checkboxPoints">
+	                    Активности с баллами
+	                </label>
+	            </div>
+				<a id="button-search" href="#" class="btn btn-success">Найти</a>
+		        </form>
+		  	</aside>
+		  	<div class="clearfix visible-sm"></div>
+		  	<main class="col-md-9 col-lg-9">
+		  		<h3 class="main-title main-title-activities">Список активностей</h3>
+		  		<div class="row">
+		  			<div class="col-lg-4 col-sm-6">
+		  				<div class="thumbnail activity">
+		  					<div class="caption">
+		  						<p class="duration">Продолжительность<br>23-35 мая</p>
+						        <h3>Курс развития креативных навыков Co-creation</h3>
+						    </div>
+						    <button class="btn btn-activity btn-success btn-lg">
+						    	<i class="fa fa-star-o"></i><span>Добавлена в траекторию</span>
+						    </button>
+							<div class="activity-points">
+								<div class="points">5</div>
+							</div>
+		  				</div>
+		  			</div>
+		  			<div class="col-lg-4 col-sm-6">
+		  				<div class="thumbnail activity">
+		  					<div class="caption">
+		  						<p class="duration">Начало 1 февраля</p>
+						        <h3>Школа наставников проектного обучения в "Сколково"</h3>
+						    </div>
+						    <button class="btn btn-activity btn-danger btn-lg">
+						    	<i class="fa fa-star-o"></i><span>Добавить в траекторию</span>
+						    </button>
+							<div class="activity-points">
+								<div class="points">5</div>
+							</div>
+		  				</div>
+		  			</div>
+		  			<div class="col-lg-4 col-sm-6">
+		  				<div class="thumbnail activity">
+		  					<div class="caption">
+		  						<p class="duration">Прием заявок до 3 апреля</p>
+						        <h3>Вторая международная научная школа по нанофотонике и метаматериалам</h3>
+						    </div>
+						    <button class="btn btn-activity btn-danger btn-lg">
+						    	<i class="fa fa-star-o"></i><span>Добавить в траекторию</span>
+						    </button>
+							<div class="activity-points">
+								<div class="points">5</div>
+							</div>
+		  				</div>
+		  			</div>
+		  			<div class="col-lg-4 col-sm-6">
+		  				<div class="thumbnail activity">
+		  					<div class="caption">
+		  						<p class="duration">Прием заявок до 3 апреля</p>
+						        <h3>Вторая международная научная школа по нанофотонике и метаматериалам</h3>
+						    </div>
+						    <button class="btn btn-activity btn-danger btn-lg">
+						    	<i class="fa fa-star-o"></i><span>Добавить в траекторию</span>
+						    </button>
+							<div class="activity-points">
+								<div class="points">5</div>
+							</div>
+		  				</div>
+		  			</div>
+		  			<div class="col-lg-4 col-sm-6">
+		  				<div class="thumbnail activity">
+		  					<div class="caption">
+		  						<p class="duration">Начало 1 февраля</p>
+						        <h3>День открытых дверей Института дизайна и урбанистики Университета ИТМО</h3>
+						    </div>
+						    <button class="btn btn-activity btn-danger btn-lg">
+						    	<i class="fa fa-star-o"></i><span>Добавить в траекторию</span>
+						    </button>
+							<div class="activity-points">
+								<div class="points">5</div>
+							</div>
+		  				</div>
+		  			</div>
+		  			<div class="col-lg-4 col-sm-6">
+		  				<div class="thumbnail activity">
+		  					<div class="caption">
+		  						<p class="duration">Начало 1 февраля</p>
+						        <h3>Школа наставников проектного обучения в "Сколково"</h3>
+						    </div>
+						    <button class="btn btn-activity btn-danger btn-lg">
+						    	<i class="fa fa-star-o"></i><span>Добавить в траекторию</span>
+						    </button>
+							<div class="activity-points">
+								<div class="points">5</div>
+							</div>
+		  				</div>
+		  			</div>
+		  			<div class="col-lg-4 col-sm-6">
+		  				<div class="thumbnail activity">
+		  					<div class="caption">
+		  						<p class="duration">Прием заявок до 3 апреля</p>
+						        <h3>Вторая международная научная школа по нанофотонике и метаматериалам</h3>
+						    </div>
+						    <button class="btn btn-activity btn-danger btn-lg">
+						    	<i class="fa fa-star-o"></i><span>Добавить в траекторию</span>
+						    </button>
+							<div class="activity-points">
+								<div class="points">5</div>
+							</div>
+		  				</div>
+		  			</div>
+		  			<div class="col-lg-4 col-sm-6">
+		  				<div class="thumbnail activity">
+		  					<div class="caption">
+		  						<p class="duration">Начало 1 февраля</p>
+						        <h3>День открытых дверей Института дизайна и урбанистики Университета ИТМО</h3>
+						    </div>
+						    <button class="btn btn-activity btn-danger btn-lg">
+						    	<i class="fa fa-star-o"></i><span>Добавить в траекторию</span>
+						    </button>
+							<div class="activity-points">
+								<div class="points">5</div>
+							</div>
+		  				</div>
+		  			</div>
+		  			<div class="col-lg-4 col-sm-6">
+		  				<div class="thumbnail activity">
+		  					<div class="caption">
+		  						<p class="duration">Начало 1 февраля</p>
+						        <h3>Школа наставников проектного обучения в "Сколково"</h3>
+						    </div>
+						    <button class="btn btn-activity btn-danger btn-lg">
+						    	<i class="fa fa-star-o"></i><span>Добавить в траекторию</span>
+						    </button>
+							<div class="activity-points">
+								<div class="points">5</div>
+							</div>
+		  				</div>
+		  			</div>
+		  			<div class="col-lg-4 col-sm-6">
+		  				<div class="thumbnail activity">
+		  					<div class="caption">
+		  						<p class="duration">Прием заявок до 3 апреля</p>
+						        <h3>Вторая международная научная школа по нанофотонике и метаматериалам</h3>
+						    </div>
+						    <button class="btn btn-activity btn-danger btn-lg">
+						    	<i class="fa fa-star-o"></i><span>Добавить в траекторию</span>
+						    </button>
+							<div class="activity-points">
+								<div class="points">5</div>
+							</div>
+		  				</div>
+		  			</div>
+		  			<div class="col-lg-4 col-sm-6">
+		  				<div class="thumbnail activity">
+		  					<div class="caption">
+		  						<p class="duration">Начало 1 февраля</p>
+						        <h3>День открытых дверей Института дизайна и урбанистики Университета ИТМО</h3>
+						    </div>
+						    <button class="btn btn-activity btn-danger btn-lg">
+						    	<i class="fa fa-star-o"></i><span>Добавить в траекторию</span>
+						    </button>
+							<div class="activity-points">
+								<div class="points">5</div>
+							</div>
+		  				</div>
+		  			</div>
+		  			<div class="col-lg-4 col-sm-6">
+		  				<div class="thumbnail activity">
+		  					<div class="caption">
+		  						<p class="duration">Начало 1 февраля</p>
+						        <h3>Школа наставников проектного обучения в "Сколково"</h3>
+						    </div>
+						    <button class="btn btn-activity btn-danger btn-lg">
+						    	<i class="fa fa-star-o"></i><span>Добавить в траекторию</span>
+						    </button>
+							<div class="activity-points">
+								<div class="points">5</div>
+							</div>
+		  				</div>
+		  			</div>
+		  		</div>
+		  		<div class="text-center">
+		  			<button type="button" class="btn btn-primary btn-lg show-more">Показать еще <i class="fa fa-angle-right"></i></button>	
+		  		</div>
+		  	</main>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+			  	<div class="col-sm-6 col-md-5">
+					<h4>Центры довузовской подготовки</h4>
+					<ul>
+						<li><a href="#">Подготовительные курсы</a></li>
+						<li><a href="#">Академия информатики и программирования</a></li>
+						<li><a href="#">Исследовательская физико-математическая школа</a></li>
+						<li><a href="#">Базовая профориентационная школа мегафакультета компьютерных технологий и управления</a></li>
+						<li><a href="#">Школьный коворкинг</a></li>
+						<li><a href="#">Детско-юношеский компьютерный центр</a></li>
+						<li><a href="#">Кружок олимпиадного программирования ИТМО</a></li>
+						<li><a href="#">Школа лазерных технологий</a></li>
+						<li><a href="#">ФабЛаб</a></li>
+						<li><a href="#">Открытая лаборатория идей, методик и практик</a></li>
+					</ul>
+			  	</div>
+			  	<div class="col-sm-6 col-md-7">
+			  		<div class="row">
+			  			<div class="col-md-6">
+							<h4>Полезные ссылки</h4>
+							<ul>
+								<li><a href="#">Подготовительные курсы</a></li>
+								<li><a href="#">Военная кафедра</a></li>
+								<li><a href="#">Олимпиады</a></li>
+								<li><a href="#">Инклюзивное образование</a></li>
+								<li><a href="#">Нормативные документы</a></li>
+								<li><a href="#">Перевод и восстановление</a></li>
+								<li><a href="#">Проходные баллы прошлых лет</a></li>
+								<li><a href="#">Часто задаваемые вопросы</a></li>
+								<li><a href="#">Минимальные баллы ЕГЭ</a></li>
+							</ul>
+					  	</div>
+					  	<div class="col-md-6">
+					  		<h4>Контакты</h4>
+							<p style="margin-top: 25px;">г. Санкт-Петербург, Кронверкский пр., 49 (вход со стороны ул. Сытнинской)</p>
+							<p>abit@cde.ifmo.ru</p>
+							<p>8 (812) 457-18-58</p>
+							<h4>Задать вопрос</h4>
+							<div id="questionInput">
+								<input type="text" class="form-control" placeholder="Отправь нам свой вопрос">
+								<div class="beauty-icon">
+									
+								</div>
+							</div>
+							<div class="social-links">
+								<a href="#">
+									<div class="beauty-icon">
+										<i class="fa fa-twitter"></i>
+									</div>
+								</a>
+								<a href="#">
+									<div class="beauty-icon">
+										<i class="fa fa-facebook"></i>
+									</div>
+								</a>
+								<a href="#">
+									<div class="beauty-icon">
+										<i class="fa fa-vk"></i>
+									</div>
+								</a>
+								<a href="#">
+									<div class="beauty-icon">
+										<i class="fa fa-instagram"></i>
+									</div>
+								</a>
+							</div>
+					  	</div>
+			  		</div>
+			  	</div>
+			</div>
+			<div class="row">
+				<div class="col-md-7 col-md-offset-5">
+					<p class="rights">
+				  		Информация &copy; 1993-2016 Университет ИТМО Разработка &copy; 2014 Департамент информационных технологий<br>
+				  		Правила использования информации в доменной зоне ifmo.ru
+				  	</p>
+				</div>
+			</div>
+		</div>
+		<div class="clouds-background"></div>
+	</footer>
+<script src="js/libs.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

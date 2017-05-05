@@ -1,0 +1,523 @@
+$font-family-href: "Schlange Sans","Open Sans",sans-serif;
+$color-red: #ff6e6b;
+$color-green: #7abe2c;
+$color-yellow-hover: #F3E87A;
+$color-red-hover : #F66461;
+$color-golden: #cabd3b;
+$color-blue: #35a5ba;
+
+body {
+  font-family: $font-family-href;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+h3 {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#search {
+	margin-right: 17px;
+	.fa {
+		transform: rotateZ(-45deg);
+	}
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+  .div-logo {
+    margin-top: 45px;
+    img {
+    	max-width: 100%;
+    }
+  }
+
+  .header-top {
+  	background-color: $color-blue;
+  	height: 33px;
+    padding-top: 5px;
+  	color: #fff;
+  	a {
+	  	font-family: $font-family-href;
+	  	color: #fff;
+	  	font-size: 17px;
+	  	text-decoration: none;
+
+	  	&:hover {
+	  		color: $color-yellow-hover;
+	  	}
+	}
+  }
+
+  .for-personal-div {
+  	text-align: right;
+  }
+
+  .itmo-code {
+  	position: absolute;
+    top: 69px;
+    right: 0;
+    width: 125px;
+    height: 78px;
+    background: #efe366;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 4px 4px 0 $color-golden;
+    cursor: pointer;
+	
+	.stars {
+		margin-left: 10px;
+    	margin-top: 7px;
+    	font-size: 15px;
+    	color: $color-golden;
+	}
+
+	.text {
+		text-transform: uppercase;
+	    color: #635b01;
+	    font-weight: bold;
+	    margin-left: 10px;
+	    margin-top: 6px;
+	    font-size: 18px;
+	    line-height: 1.1em;
+	}
+  }
+}
+
+main {	
+  padding-bottom: 40px;
+  .activity {
+  	.duration {
+		height: 50px;
+		color: #a6b1ba;
+		line-height: 1.2em;
+		font-size: 17px;
+		padding-right: 40px;
+	}
+  	// width: 340px;
+    height: 360px;
+    padding-bottom: 120px;
+    position: relative;
+
+    button {
+    	position: absolute;
+    	bottom: 40px;
+    	left: 50%;
+   		transform: translateX(-50%);
+
+   		.fa {
+   			font-size: 22px;
+    		position: absolute;
+		    left: 19px;
+		    top: 8px;
+   		}
+
+    }
+
+    .activity-points {
+    	position: absolute;
+	    top: 9px;
+	    right: 9px;
+	    border: 2px solid $color-golden;
+	    width: 42px;
+	    height: 42px;
+	    border-radius: 21px;
+	    font-weight: bold;
+	    padding: 0px 12px;
+	    color: $color-golden;
+
+	    .points {
+	    	position: absolute;
+		    font-size: 26px;
+		    right: 7px;
+    		top: 2px;
+		    &:before {
+		    	content: "+";
+			    font-size: 20px;
+			    position: absolute;
+			    left: -12px;
+			    top: 3px;
+		    }
+		    &:after {
+		    	content: "баллов";
+			    font-size: 12px;
+			    position: absolute;
+			    bottom: -17px;
+			    right: -9px;
+		    }
+	    }
+    }
+  }
+
+}
+
+aside {
+	width: 245px;
+}
+
+h3.main-title {
+	margin-bottom: 20px;
+	margin-top: 40px;
+}
+
+.main-title-filter {
+	color: #11889f;
+}
+
+.main-title-activities {
+	color: #4f6376;
+}
+
+footer {
+	background: $color-blue url(../img/bg-footer.png) no-repeat -10px 25px;
+	background-size: contain;
+
+	h4 {
+		color: #fff;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-top: 48px;
+		font-size: 20px;
+	}
+
+	p {
+		color: #fff;
+	}
+
+	a {
+	  	color: #fff;  	
+    	font-size: 14px;
+
+	  	&:hover {
+	  		color: $color-yellow-hover;
+	  		text-decoration: none;
+	  	}
+	}
+
+	ul {
+		margin-top: 25px;
+		li {
+			margin-top: 15px;
+		}
+	}
+
+	.rights {
+		font-size: 11px;
+		color: rgba(#fff, 0.5);
+		margin-top: 20px
+	}
+
+	.clouds-background {
+		height: 67px;
+		background: url(../img/clouds.png);
+	}
+}
+
+.beauty-icon {
+	background-color: $color-red;
+    display: inline-block;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    margin-right: 10px;
+    .fa {
+    	position: absolute;
+	    left: 50%;
+	    top: 50%;
+	    transform: translate(-50%, -50%);
+    }
+    &:hover {
+    	background-color: #fff;
+    	color: $color-red;
+    }
+}
+
+#questionInput {
+	position: relative;
+	.beauty-icon {
+		right: 6px;
+	    top: 3px;
+	    position: absolute;
+	    width: 35px;
+	    height: 35px;
+	    background: $color-red url(../img/send-icon.png) no-repeat 50% 50%;
+	    margin: 0;
+	    cursor: pointer;
+	    &:hover {
+	    	background-color: darken($color-red, 10%);
+	    }
+	}
+	input {
+		padding: 20px 45px 20px 11px;
+    	font-size: 15px;
+	}
+}
+
+.social-links {
+	margin-top: 35px;
+}
+
+.btn {
+	border-radius: 20px;
+	text-transform: uppercase;
+	font-weight: bold; 
+	font-size: 15px;
+	padding: 3px 25px;
+}
+
+.show-more {
+	margin-top: 20px;
+}
+
+.thumbnail {
+	border-radius: 0;
+	border-color: #c7e8f0;
+	.caption {
+		padding: 13px;
+		color: $color-blue;
+
+		h3 {
+			line-height: 1.2em;
+			text-transform: none;
+			font-weight: normal;
+		}
+	}
+}
+
+#button-search {
+	margin-left: 50px;
+}
+
+.btn-lg {
+	padding: 10px 22px;
+}
+
+.btn-activity {
+	padding-left: 52px;
+}
+
+.btn-danger {
+	background-color: #fff;
+	color: $color-red;
+	border-color: $color-red;
+	&:hover {
+		background-color: $color-red;
+    	border-color: $color-red;
+	}
+}
+
+.btn-success {
+	background-color: $color-green;
+	border-color: $color-green;
+}
+
+.btn-primary {
+	background-color: #ddf9ff;
+	border-color: #ddf9ff;
+	color: $color-blue;
+	.fa {
+		font-size: 18px;
+	    font-weight: bold;
+	    margin-left: 5px;
+	}
+}
+
+.btn-filter {
+	background: none;
+    border: 1px solid $color-blue;
+    color: $color-blue;
+    text-transform: none;
+    font-size: 17px;
+    padding: 2px 18px;
+    margin-top: 15px;
+    font-weight: normal;
+    text-align: left;
+    position: relative;
+    .fa {
+    	position: absolute;
+    	right: 15px;
+    	top: 5px;
+    }
+
+    &:hover {
+    	color: $color-red;
+    }
+
+    &:focus {
+		color: $color-blue;;
+	}
+}
+
+.fa-angle-down {
+	vertical-align: middle;
+}
+
+.breadcrumb {
+	background: none;
+	padding-left: 0;
+	margin-bottom: 0;
+	a:hover {
+		text-decoration: none;
+		color: $color-red-hover;
+	}
+}
+
+.navbar-nav {
+	font-weight: bold;
+    margin-top: 45px;
+    font-size: 18px;
+    a:hover {
+	    color: $color-red-hover;
+	    background: none;
+	}
+}
+
+.container {
+    padding-right: 46px;
+    padding-left: 46px;
+}
+
+.dropdown-menu {
+	min-width: 210px;
+}
+
+a {
+	color: #11889f;
+}
+
+hr {
+	margin: 0;
+}
+
+.checkbox {
+	color: $color-blue;
+
+	label {
+		font-size: 17px;
+	}
+
+	input:checked + label{
+	  	&:before {
+	    	background-color: $color-green;
+	    	border: none;
+		}
+		&:after {
+			color: #fff;
+		}
+	}
+}
+
+.bootstrap-select{
+	&.active .btn-filter {
+		border-color: $color-green;
+    	color: $color-green;
+    	box-shadow: none;
+	}
+	&:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+	    width: 210px;
+	}
+}
+
+.personal-link-icon {
+	display: none;
+}
+
+@mixin button-size-different {
+	.btn-activity {
+		font-size: 12px;
+		padding-left: 32px;
+		padding-right: 16px;
+		.fa {
+			font-size: 19px;
+			left: 10px;
+		}
+	}
+}
+
+@media (max-width: 410px) {
+	.activity {
+		@include button-size-different;
+	}
+}
+
+@media (max-width: 550px) {
+	header .itmo-code {
+		right: -114px;
+		transition: 0.2s ease-out;
+		&:hover {
+			right: 0;
+			transition: 0.2s ease-in;
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	#button-search {
+	    margin-left: 230px;
+	}
+}
+
+@media (max-width: 992px) {
+	footer {
+		background-color: $color-blue;
+		background-image: url(../img/sun.png), 
+						  url(../img/sun.png), 
+						  url(../img/sun.png),
+						  url(../img/rocket.png),
+						  url(../img/path.png),
+						  url(../img/path.png),
+						  url(../img/star.png),
+						  url(../img/star.png),
+						  url(../img/dot.png),
+						  url(../img/dot.png),
+						  url(../img/triangle.png);
+	    background-position: 5% 10%,
+	    				     97% 10%,
+	    				     72% 72%,
+	    				     85% 50%,
+	    				     -1% 45%,
+	    				     96% 75%,
+	    				     5% 80%,
+	    				     70% 32%,
+	    				     75% 15%,
+	    				     91% 35%,
+	    				     85% 5%;
+	    background-repeat: no-repeat;
+	    background-size: initial;
+	}
+}
+
+@media (min-width: 992px) {
+	.col-md-3 {
+	    width: 28%;
+	}
+
+	.col-md-9 {
+	    width: 72%;
+	    padding-left: 40px;
+	    border-left: 1px solid #eee;
+	}
+
+	.activity {
+		@include button-size-different;
+	}
+}
+
+@media (min-width: 1200px) {
+	.col-lg-3 {
+	    width: 23%;
+	}
+
+	.col-lg-9 {
+	    width: 77%;
+	    padding-left: 40px;
+	    border-left: 1px solid #eee;
+	}
+}
